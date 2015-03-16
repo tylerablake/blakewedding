@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="The wedding website of Hunter Haas and Nathan Savory, also known as Hunthan. September 13, 2014 in downtown Chicago.">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<title>The Wedding of Hunter &amp; Nathan | Hunthan | 9.13.14</title>
+
+	<!-- Normalize CSS -->
+	<link href="css/normalize.css" rel="stylesheet">
+	<!-- My CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	<style>
+		/* Some MapBox styles */
+		#map {
+			width:100%;
+			height:400px;
+			display: block;
+		}
+		#map h1 { font-size: 20px; font-weight: 600; padding: 0 0 15px 0; }
+		#map p { font-size: 14px; font-weight: 400; }
+		.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: rgba(255,255,255,0.8); }
+		.leaflet-popup-content-wrapper a, .leaflet-popup-tip a { color: #8B2B8F; }
+	</style>
+
+	<!-- MapBox JS -->
+	<link href='//api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css' rel='stylesheet' />
+  		<!--[if lte IE 8]>
+    		<link href='//api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.ie.css' rel='stylesheet' />
+    		<![endif]-->
+    		<script src='//api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.js'></script>
+
+    		<!-- Typekit script -->
+    		<script type="text/javascript" src="//use.typekit.net/jnv1lfi.js"></script>
+    		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    		<!-- Responsive Nav JS -->
+    		<script src="js/responsive-nav.js"></script>
+
+    		<!-- Twitter JS -->
+    		<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+ 		<!-- Instafeed -->
+		<script type="text/javascript" src="pics/instafeed.min.js"></script>
+		<script type="text/javascript">
+			var feed = new Instafeed({
+				get: 'tagged',
+				tagName: 'hunthanhitched',
+				clientId: '58bd869c2f36498fa244a8d1ebc63c9b',
+				resolution: 'thumbnail',
+				limit: '5',
+				sortBy: 'random',
+				template: '<a class="pic-site" href="{{link}}" target="blank"><img src="{{image}}" /></a>'
+			});
+			feed.run();
+		</script>
+
+    <!-- Facebook open graph -->
+    <meta property="og:title" content="Hunthan Hitched | The Wedding Website of Hunter & Nathan | 9.13.14"/>
+	<meta property="og:image" content="./img/fb.jpg"/>
+	<meta property="og:site_name" content="Hunthan Hitched"/>
+	<meta property="og:description" content="The wedding website of Hunter Haas and Nathan Savory. September 13, 2014 in downtown Chicago. #HunthanHitched." />
+
+	<!-- Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-39339355-4', 'hunthanhitched.com');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body id="home">
+		<div class="wrap full-width-nav">
+			<div class="contain">
+				<div class="grid">
+					<div class="unit whole">
+						<a id="logo" href="#home"></a>
+						<nav class="nav-collapse">
+							<ul id="top-menu">
+								<li><a href="#the-guys" class="">The Guys</a></li>
+								<li><a href="#the-15th-moment">The 15th Moment</a></li>
+								<li><a href="#the-team">The Team</a></li>
+								<li><a href="#the-when-where">The When &amp; Where</a></li>
+								<li><a href="#the-city">The City</a></li>
+								<li><a href="#the-gifts">The Gifts</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="wrap image-slider">
+			<div id="slides">
+				<ul class="bxslider">
+					<li><img src="./img/engage/slider-1.jpg" /></li>
+					<li><img src="./img/engage/slider-2.jpg" /></li>
+					<li><img src="./img/engage/slider-8.jpg" /></li>
+					<li><img src="./img/engage/slider-3.jpg" /></li>
+					<li><img src="./img/engage/slider-6.jpg" /></li>
+					<li><img src="./img/engage/slider-10.jpg" /></li>
+					<li><img src="./img/engage/slider-5.jpg" /></li>
+					<li><img src="./img/engage/slider-4.jpg" /></li>
+					<li><img src="./img/engage/slider-9.jpg" /></li>
+					<li><img src="./img/engage/slider-7.jpg" /></li>
+				</ul>
+			</div>
+		</header>
+		<div class="opl"><a href="http://onepagelove.com/hunthan-hitched" target="_blank"></a></div>
+		<div class="contain">
+			<section class="welcome">
+				<div class="grid">
+					<div class="unit whole">
+						<p id="intro">Welcome to our wedding website! We can’t wait to celebrate our wedding with all of you here in<br>Chicago on <span id="date">September 13, 2014</span>. Until then, take some time and explore our site to learn a bit more about us, and the details of the big day.</p>
+						<img id="sig" src="./img/hunter-nathan.png" width="250px" />
+					</div>
+				</div>
+			</section>
+			<section class="guys" id="the-guys">
+				<div class="grid">
+					<div class="unit half">
+						<img class="guys-photos" src="./img/hunter.png" width="250px" height="250px">
+						<h2>Hunter</h2>
+						<h3>Groom</h3>
+						<p>Part time account manager,<br>full time cake connoisseur.</p>
+					</div>
+					<div class="unit half">
+						<img class="guys-photos" src="./img/nathan.png" width="250px" height="250px">
+						<h2>Nathan</h2>
+						<h3>Groom</h3>
+						<p>Part time doctor of advertising,<br>full time Beyoncé backup dancer.</p>
+					</div>
+					<div class="unit whole">
+						<!-- First image in general gallery here -->
+						<a class="general-popup" href="./img/general/photo-gallery-1.jpg">Photos of the grooms</a>
+						<!-- Remaining general gallery images -->
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-2.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-3.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-4.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-5.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-6.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-7.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-8.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-9.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-10.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-11.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-12.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-13.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-14.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-15.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-16.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-17.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-18.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-19.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-20.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-21.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-22.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-23.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-24.jpg"></a></div>
+						<div class="hidden-thumb"><a class="general-popup" href="./img/general/photo-gallery-25.jpg"></a></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="wrap photo-1">
+			<div class="contain">
+				<div class="grid">
+					<div class="unit whole">
+						<div id="count">
+							<div id="defaultCountdown"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contain">
+			<section class="moment" id="the-15th-moment">
+				<div class="grid">
+					<div class="unit two-fifths">
+						<h1 class="center-on-mobiles">The 15th Moment</h1>
+						<h2 class="center-on-mobiles">Locking it up</h2>
+					</div>
+					<div class="unit three-fifths">
+						<p>Hunter used a bit of tomfoolery to trick Nathan in to thinking he had a boring night at a work dinner ahead. However, Nathan immediately knew that something was up when the black town car that came to pick him up and was sans Hunter. Inside he found fourteen envelopes, each highlighting a special moment in their relationship. The directions said when you get to #15, come and find Hunter.</p>
+					</div>
+					<div class="unit whole">
+						<p>At home, Hunter patiently waited (some say patiently, others say manically) while he decorated their apartment. Even after his 45-minute delay in Lake Shore Drive traffic during rush hour, Nathan needed a bit of coaching to come inside the apartment.</p>
+						<p>Cameras flashing, music playing, cake patiently waiting to be eaten and champagne on ice, Nathan said YES (#15, the moment Hunter promised forever) and their destiny to forever enjoy free 7/11 Slurpee’s on their engage-iversary was sealed.</p>
+					</div>
+					<div class="unit three-fifths">
+						<p>After a surprise dinner at one of Nathan’s favorite spots with some of our closest friends, the fun continued all weekend with an engage-moon trip to New Buffalo, MI where even more of Nathan’s childhood best friends joined in on the fun.</p>
+					</div>
+					<div class="unit two-fifths button">
+						<!-- First image in engagement gallery here -->
+						<a class="engage-popup" href="./img/moment/engagement-1.jpg">See the Photos</a>
+					</div>
+					<!-- Remaining engagement gallery images -->
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-2.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-3.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-4.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-5.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-6.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-7.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-8.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-9.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-10.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-11.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-12.jpg"></a></div>
+					<div class="hidden-thumb"><a class="engage-popup" href="./img/moment/engagement-13.jpg"></a></div>
+				</div>
+			</section>
+		</div>
+		<div class="wrap photo-2"></div>
+		<div class="contain">
+			<section class="team" id="the-team">
+				<div class="grid">
+					<!-- Best Man Maid of Honor -->
+					<div class="unit half">
+						<h1 class="center-on-mobiles">The Team</h1>
+						<h2 class="center-on-mobiles">Our wedding party</h2>
+					</div>
+					<div class="unit one-quarter">
+						<div class="hcaption" data-target="#team1"><img src="./img/team/Hayden-Haas.jpg"></div>
+						<div id="team1" class="hide">
+							<h2>Hayden Haas</h2>
+							<h3>Best Man</h3>
+							<p>Part time accountant, full time b-boy</p>
+						</div>
+					</div>
+					<div class="unit one-quarter">
+						<div class="hcaption" data-target="#team2"><img src="./img/team/Carly-Savory.jpg"></div>
+						<div id="team2" class="hide">
+							<h2>Carly Savory</h2>
+							<h3>Maid of Honor</h3>
+							<p>Part time MTV cast member, full time bun master</p>
+						</div>
+					</div>
+				</div>
+				<!-- Rest of team row 1 -->
+				<div class="grid">
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team3"><img src="./img/team/Katie-Baker.jpg"></div>
+						<div id="team3" class="hide">
+							<h2>Katie Baker</h2>
+							<p>Part time meeting planner, full time nail technician</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team4"><img src="./img/team/Meggie-Dials.jpg"></div>
+						<div id="team4" class="hide">
+							<h2>Meggie Dials</h2>
+							<p>Part time exactly on target, full time lyricist</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team5"><img src="./img/team/Jordan-Haas.jpg"></div>
+						<div id="team5" class="hide">
+							<h2>Jordan Haas</h2>
+							<p>Part time director of commerce, full time party professional</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team6"><img src="./img/team/Nicki-Huels.jpg"></div>
+						<div id="team6" class="hide">
+							<h2>Nicki Huels</h2>
+							<p>Part time mom-of-two, full time rap enthusiast</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team7"><img src="./img/team/Dana-Haas.jpg"></div>
+						<div id="team7" class="hide">
+							<h2>Dana Haas</h2>
+							<p>Part time magic mom, full time pinterest pro</p>
+						</div>
+					</div>
+				</div>
+				<!-- Rest of team row 2 -->
+				<div class="grid">
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team8"><img src="./img/team/Peri-Kaplan.jpg"></div>
+						<div id="team8" class="hide">
+							<h2>Peri Kaplan</h2>
+							<p>Part time event coordinator, full time mayor of Iowa City</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team9"><img src="./img/team/Adam-Levy.jpg"></div>
+						<div id="team9" class="hide">
+							<h2>Adam Levy</h2>
+							<p>Part time event planner, full time punk electronica DJ</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team10"><img src="./img/team/Katie-Tunning.jpg"></div>
+						<div id="team10" class="hide">
+							<h2>Katie Tunning</h2>
+							<p>Part time hospital high roller, full time “fun one”</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team11"><img src="./img/team/Jessica-Sachs.jpg"></div>
+						<div id="team11" class="hide">
+							<h2>Jessica Sachs</h2>
+							<p>Part time ad sales solutionist, full time dance-a-holic</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team12"><img src="./img/team/Sarah-Andrews-right.jpg"></div>
+						<div id="team12" class="hide">
+							<h2>Sarah Andrews</h2>
+							<p>Part time talent recruiter, full time flyer</p>
+						</div>
+					</div>
+				</div>
+				<!-- Rest of team row 3 -->
+				<div class="grid">
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team13"><img src="./img/team/Brendan-Shanahan.jpg"></div>
+						<div id="team13" class="hide">
+							<h2>Brendan Shanahan</h2>
+							<p>Part time business student, full time sea captain</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team14"><img src="./img/team/Cara-Cerullo.jpg"></div>
+						<div id="team14" class="hide">
+							<h2>Cara Cerullo</h2>
+							<p>Part time counselor of people, full time protector of pets</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team15"><img src="./img/team/Hilary-Goldin.jpg"></div>
+						<div id="team15" class="hide">
+							<h2>Hilary Goldin</h2>
+							<p>Part time Googler, full time magician</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team16"><img src="./img/team/Erin-Ott.jpg"></div>
+						<div id="team16" class="hide">
+							<h2>Erin Ott</h2>
+							<p>Part time Facebook fanatic, full time Trader Joe’s taste tester</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team17"><img src="./img/team/Josiah-Haas.jpg"></div>
+						<div id="team17" class="hide">
+							<h2>Josiah Haas</h2>
+							<p>Part time VP of sales, full time karaoke contender</p>
+						</div>
+					</div>
+				</div>
+				<!-- Rest of team row 4 -->
+				<div class="grid">
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team18"><img src="./img/team/Wynne-flower-girl.jpg"></div>
+						<div id="team18" class="hide">
+							<h2>Wynne Huels</h2>
+							<p>Part time flower girl, full time Daniel Tiger spirit captain</p>
+						</div>
+					</div>
+					<div class="unit one-fifth">
+						<div class="hcaption" data-target="#team19"><img src="./img/team/Asher-Haas-ringbearer.jpg"></div>
+						<div id="team19" class="hide">
+							<h2>Asher Haas</h2>
+							<p>Part time ring bearer, full time Maroon 5 bassist</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="wrap photo-3"></div>
+			<div class="contain">
+				<section class="when-where" id="the-when-where">
+					<div class="grid">
+						<div class="unit whole address">
+							<h1>The Ritz-Carlton Chicago</h1>
+							<h2>160 East Pearson Street at Water Tower Place<br>Chicago, Illinois 60611</h2>
+						</div>
+						<div class="unit whole">
+							<p>The wedding ceremony will begin at 6:30pm, with cocktails, dinner and epic dancing to immediately follow. The location is marked with a star on the interactive map below.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="city" id="the-city">
+				<div class="wrap">
+					<div id="map"></div>
+					<script type='text/javascript'>
+						var map = L.mapbox.map('map', 'badelt.map-5gtipwut')
+						.setView([41.898021, -87.622916], 15);
+
+					// disable drag and zoom handlers
+					map.scrollWheelZoom.disable();
+					// disable tap handler, if present.
+					if (map.tap) map.tap.disable();
+				</script>
+			</div>
+			<div class="contain">
+				<div class="grid">
+					<div class="unit half">
+						<h1>Where to stay</h1>
+						<p>Chicago has an eclectic mix of beautiful hotels in and around the downtown area. Feel free to pick your favorite hotel in the city, however for your convenience we've reserved a block of rooms at a sampling of downtown properties. Click the dark purple pins on the map above for room rates and contact information, or check them out in the list below!</p>
+						<p>When making your reservations at any of these hotels, be sure to reference the <strong>Haas/Savory Wedding</strong> in order to receive the group rate.</p>
+						<ul class="hotels">
+							<li class="hotel-name">Warwick Allerton Hotel</li>
+							<li class="hotel-rate">Room Rate - $179</li>
+							<em>Discounted room rate available until August 12, 2014</em>
+							<li class="hotel-phone">(312) 440-1500</li>
+							<li class="hotel-site"><a href="http://warwickhotels.com/check-availability/?hotelCode=HYWORDAL&arrivalDate=2014-9-12&nights=1&rateAccessCode=*GS$&adults2=1&childAges1=0&iatanumber=12345675" target="blank">Website</a></li>
+						</ul>
+						<ul class="hotels">
+							<li class="hotel-name">The Westin Chicago</li>
+							<li class="hotel-rate">Room Rate - $239</li>
+							<em>Discounted room rate available until August 14, 2014</em>
+							<li class="hotel-phone">(888) 627-8385</li>
+							<li class="hotel-site"><a href="http://www.thewestinmichiganavenue.com" target="blank">Website</a></li>
+						</ul>
+						<ul class="hotels">
+							<li class="hotel-name">The James Hotel</li>
+							<li class="hotel-rate">Room Rate - $249 (Group Code: CHAA12)</li>
+							<em>Discounted room rate available until August 23, 2014</em>
+							<li class="hotel-phone">(312) 660-7131</li>
+							<li class="hotel-site"><a href="http://www.jameshotels.com/reserve?hotel=24206&Chain=5158&lang=1&dest=James&shell=Flex&template=Flex&promo=" target="blank">Website</a></li>
+						</ul>
+						<ul class="hotels">
+							<li class="hotel-name">The Ritz-Carlton Chicago</li>
+							<li class="wedding-hotel">Wedding Location</li>
+							<li class="hotel-rate">Room Rate - $305</li>
+							<li class="hotel-phone">(312) 266-1000</li>
+							<li class="hotel-site"><a href="http://www.fourseasons.com/chicagorc" target="blank">Website</a></li>
+						</ul>
+					</div>
+					<div class="unit half">
+						<h1>Brunch spots</h1>
+						<p>Like most good Chicagoans, we love a great brunch! If you have time, be sure to check out some of our favorites in the downtown area. They're marked with a light purple pin on the map above...click for information!</p>
+						<ul class="brunch">
+							<li class="brunch-name">Tavern on Rush</li>
+							<li class="brunch-address">1031 North Rush Street</li>
+							<li class="brunch-site"><a href="http://www.tavernonrush.com" target="blank">Website</a></li>
+						</ul>
+						<ul class="brunch">
+							<li class="brunch-name">Fred's at Barneys</li>
+							<li class="brunch-address">15 East Oak Street</li>
+							<li class="brunch-site"><a href="http://chicago.menupages.com/restaurants/freds-at-barneys-new-york/" target="blank">Website</a></li>
+						</ul>
+						<ul class="brunch">
+							<li class="brunch-name">Yolk on Wells</li>
+							<li class="brunch-address">747 North Wells</li>
+							<li class="brunch-site"><a href="http://eatyolk.com/" target="blank">Website</a></li>
+						</ul>
+						<ul class="brunch">
+							<li class="brunch-name">Brunch</li>
+							<li class="brunch-address">644 North Orleans</li>
+							<li class="brunch-site"><a href="http://www.brunchit.com/" target="blank">Website</a></li>
+						</ul>
+						<ul class="brunch">
+							<li class="brunch-name">Bandera</li>
+							<li class="brunch-address">535 North Michigan Avenue</li>
+							<li class="brunch-site"><a href="http://www.hillstone.com/#/restaurants/bandera/" target="blank">Website</a></li>
+						</ul>
+						<ul class="brunch">
+							<li class="brunch-name">Yolk on Ohio</li>
+							<li class="brunch-address">355 East Ohio Street</li>
+							<li class="brunch-site"><a href="http://eatyolk.com/" target="blank">Website</a></li>
+						</ul>
+					</div>
+					<div class="unit whole instagram">
+						<h1><span id="hash">#</span>Hunthan<span id="hitched">Hitched</span></h1>
+						<p>Help us relive the fun by tagging all of your Hunthan wedding related Instagram photos with <strong>#HunthanHitched</strong> before, during, and after the big day, and view the feed real-time at:</p>
+						<p id="pic-url"><a href="./pics" target="blank">hunthanhitched.com/pics</a></p>
+						<div class="center-on-mobiles" id="instafeed"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="wrap photo-4"></div>
+		<div class="contain">	
+			<section class="gifts" id="the-gifts">
+				<div class="grid">
+					<div class="unit whole">
+						<p>We're registered at Bloomingdale's, William's Sonoma, Crate &amp; Barrel, and Restoration Hardware. Click the logos to view our registries!</p>
+					</div>
+					<div class="unit one-quarter">
+						<a class="gift-logo" href="http://www1.bloomingdales.com/registry/wedding/guest/?registryId=6039782" target="blank"><img src="./img/gifts/bloom.png"></a>
+					</div>
+					<div class="unit one-quarter">
+						<a class="gift-logo" href="https://secure.williams-sonoma.com/registry/q8676wt7dr/registry-list.html" target="blank"><img src="./img/gifts/ws.png"></a>
+					</div>
+					<div class="unit one-quarter">
+						<a class="gift-logo" href="http://www.crateandbarrel.com/Gift-Registry/Hunter-Haas-and-Nathan-Savory/r5102843" target="blank"><img src="./img/gifts/cb.png"></a>
+					</div>
+					<div class="unit one-quarter">
+						<a class="gift-logo" href="http://www.restorationhardware.com/gift-registry/gift-list.jsp?giftlistId=gl694785202" target="blank"><img src="./img/gifts/rh.png"></a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="wrap foot">
+		</footer>
+
+		<!-- jQuery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- Scripts at the bottom like a good boy -->
+		<!-- Responsive Nav is in Head -->
+		<!-- Image Slider -->
+		<script src="js/jquery.bxslider.min.js"></script>
+		<!-- Magnific Popups -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Countdown -->
+		<script src="js/jquery.countdown.js"></script>
+		<!-- Captions -->
+		<script src="js/jquery.hcaptions.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+	</body>
+</html>	
