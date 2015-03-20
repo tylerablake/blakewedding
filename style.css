@@ -1174,20 +1174,20 @@ ul#mainnav li a {
 }
 
 ul#mainnav > li > a:hover > span{
-	border-bottom:1px solid #323232;
+	border-bottom:1px solid #c5b15a;
 	padding-bottom:2px;
 }
 
 ul#mainnav > li.item-active > a {
-	color:#323232;	
+	color:#c5b15a;	
 }
 
 ul#mainnav li a.sf-with-ul:hover, ul#mainnav li a.sf-with-ul:active {
-	color:#323232;
+	color:#c5b15a;
 }
 
 ul#mainnav li ul li a.sf-with-ul:hover, ul#mainnav li ul li a.sf-with-ul:active {
-	color:#323232;
+	color:#c5b15a;
 }
 
 ul#mainnav > li.current > a span {
@@ -1195,11 +1195,11 @@ ul#mainnav > li.current > a span {
 }
 
 ul#mainnav li a.sf-with-ul:hover, ul#mainnav li a.sf-with-ul:active {
-	color:#323232;
+	color:#c5b15a;
 }
 
 ul#mainnav li a:hover, ul#mainnav li a:active, ul#mainnav li a.current {
-	color:#323232;
+	color:#c5b15a;
 }
 
 ul#mainnav li ul li a.current {
@@ -1208,7 +1208,7 @@ ul#mainnav li ul li a.current {
 }
 ul#mainnav li ul li a.current:hover {
 	color:#fff;
-	background:#444;
+	background:#c5b15a;
 }
 
 ul#mainnav li ul li {
