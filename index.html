@@ -38,6 +38,7 @@
 	<script type="text/javascript" src="js/modernizr.js"></script>		
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>	
 	<script type="text/javascript" src="js/jquery.parallax.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
 
 	<!-- Mapbox Scripts-->
 	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
@@ -188,10 +189,15 @@
 		<div class="darker-overlay">	
 			<section class="centered-wrapper">
 				<div class="double-space"> </div>
-
-				<h2 class="parallax-quote">Countdown</h2> <br> <br> <h1>Insert Timer Here</h1>
-
-				
+				<div id="getting-started" class="counter-number percent-one-whole center-text">
+ 					<script type="text/javascript">
+					   $("#getting-started")
+					   .countdown("2016/06/11", function(event) {
+					   $(this).text(
+					   event.strftime('%D days | %H hours | %M minutes | %S seconds'));});
+					</script>
+				</div>
+				<div class="double-space"></div>
 			</section>	
 		</div>
 	</section>
@@ -578,7 +584,12 @@
 			
 			<h1 class="section-title">Registries</h1>	
 			<div class="space"></div>
-			
+				<div class="section-tagline">
+					<p>If you would like to help us start our life together, we’ve registered for items we would love to have in our new home.<br>
+					 We are registered at store, store, and store. <br>
+						Click the logos to view our registries.</p>
+				</div>
+			<div class="double-space"></div>
 						<!-- *********************************	Row 1 **************************************** -->
 				<div class="percent-one-fourth box fadeInDown">
 					<div class="team-member">
@@ -656,6 +667,7 @@
 	<script type="text/javascript" src="js/jack-in-the-box.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>	
 	<script type="text/javascript" src="js/jquery.nav.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
 
 	<!-- MAP SCRIPT -->
 	<script>

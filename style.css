@@ -855,6 +855,7 @@ textarea {
 .percent-four-fifth { width: 67.2%; }
 .percent-one-sixth { width: 13.33%; }
 .percent-five-sixth { width: 82.67%; }
+.percent-one-whole {width: 100%; }
 
 .percent-one-half,
 .percent-one-third,
@@ -3304,13 +3305,12 @@ ul.customlist li i {
 }
 
 .counter-number {
-    font-size: 56px;
-
+    font-size: 200px;
     font-weight: bold;
     width: 100%;
     display: inline-block;
     line-height: 56px;
-    color: #323232;
+    color: #FFF;
     margin-bottom: 8px;
 }
 
@@ -3319,4 +3319,10 @@ ul.customlist li i {
 	
     clear: both;
     text-transform: uppercase;
+}
+
+#getting-started{
+	font-size: 200%;
+	font-weight: 100;
+	text-align: center;
 }
