@@ -1031,7 +1031,7 @@ blockquote {
 #header {
 	position: fixed;
 	z-index:4000;
-	padding: 55px 0 25px;	
+	padding: 15px 0 25px;	
 	display: block;
 	width: 100%;
 	-webkit-transition:all 0.2s linear;
@@ -1042,6 +1042,9 @@ blockquote {
 
 .solid-header {
 	background: #fff;
+	width: 100%;
+	display: block;
+	position: fixed;
 }
 
 .transparent-header {
