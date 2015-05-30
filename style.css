@@ -1383,7 +1383,7 @@ h3.service {
 }
 
 .team-avatar {
-    max-height: 187px;
+    height: 210px;
     width:100%;
 	display:block;
 }
