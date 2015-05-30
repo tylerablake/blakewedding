@@ -1435,7 +1435,10 @@ h3.service {
     margin-top:10px;
 }
 
-
+.couple-avatar{
+	width:100%;
+	display:block;
+}
 .skillbar {
 	position:relative;
 	display:block;
