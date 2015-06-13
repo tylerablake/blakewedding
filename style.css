@@ -1384,7 +1384,7 @@ h3.service {
 
 .team-avatar {
     height: 210px;
-    width:100%;
+    max-width:100%;
 	display:block;
 }
 
