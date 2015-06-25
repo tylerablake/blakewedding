@@ -32,17 +32,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>	
 	
 	<!-- jQuery -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
-	
-	<!-- jQuery Scripts -->
-	<script type="text/javascript" src="js/modernizr.js"></script>		
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>	
-	<script type="text/javascript" src="js/jquery.parallax.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>		
 
 	<!-- Mapbox Scripts-->
 	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
-	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' /> </head> 
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' /> 
+</head> 
 
 <body> 
 	<!-- preloader-->
@@ -51,20 +46,12 @@
 	</div>
 
 	<header id="header" class="solid-header">
-		<div class="centered-wrapper">
-
-
-			<!-- Navbar Logo -->
-<!-- 			<div class="percent-one-fourth">
-				<div class="logo"><a href="index.html"><img src="" alt="" /></a></div>
-			</div><!--end one-fourth-->
-			
+		<div class="centered-wrapper">		
 			<a class="nav-btn"><i class="fa fa-bars"></i></a>
-			
 			<div class="percent-three-fourth column-last">					
 				<nav id="navigation">
 					<ul id="mainnav" class="sf-menu">
-						<li class="current"><a href="index.html#hello"><span>Welcome</span></a></li>
+						<li class="current"><a href="index.html#hello"><span>Home</span></a></li>
 						<li><a href="index.html#couple"><span>Bride & Groom</span></a></li>
 						<li><a href="index.html#about"><span>Proposal</span></a></li>						
 						<li><a href="index.html#team"><span>Wedding Party</span></a></li>
@@ -77,24 +64,18 @@
 			<div class="clear"></div>			
 		</div><!--end centered-wrapper-->
 	</header>	
-	
-<div id="wrapper">
 
+<div id="wrapper">
 	<!-- HELLO SECTION -->
-	
 	<section id="hello">
-	
-	<!--  menu-fixer class for the header. Should always be present when header is set to "solid-header". Delete it when you use "transparent-header" or "no-header" classes for the header  -->
 	<div class="menu-fixer"></div>
-	
 		<div class="fullscreenbanner-container">
 			<div class="fullscreenbanner">
 				<ul>
-					
+
 					<!-- THE FIRST SLIDE -->
 					<li data-transition="fade" data-slotamount="15" data-masterspeed="300">
 						<img src="images/slides/slide33.jpg" alt="" />
-						
 						<!-- THE CAPTIONS IN THIS SLIDE -->
 						<div class="caption tp-resizeme big-text lft ltt"  
 							 data-x="center" 
@@ -102,14 +83,13 @@
 							 data-speed="300" 
 							 data-start="500" 
 							 data-easing="easeOutExpo">
-
 								<div class="fancy-caption" style="width: 365px">
 									<div class="fancy-slider-info"></div>
 									<div class="fancy-slider-caption"></div>
 								</div>
 						</div>								
-					</li>	
-					
+					</li>
+
 					<!-- THE SECOND SLIDE -->
 					<li data-transition="slidedown" data-slotamount="15" data-masterspeed="300">
 						<img src="images/slides/slide11.jpg" alt="" />
@@ -120,13 +100,11 @@
 							 data-speed="300" 
 							 data-start="500" 
 							 data-easing="easeOutExpo"></div>
-									
 					</li>
 					
 					<!-- THE THIRD SLIDE -->
 					<li data-transition="fade" data-slotamount="15" data-masterspeed="300">						
 						<img src="images/slides/slide22.jpg" alt="" />
-																
 						<!-- THE CAPTIONS IN THIS SLDIE -->
 						<div class="caption tp-resizeme big-text lft ltt"  
 							 data-x="center" 
@@ -134,28 +112,18 @@
 							 data-speed="300" 
 							 data-start="500" 
 							 data-easing="easeOutExpo"></div>
-									
 					</li>				
-		
 				</ul>
-				<!-- Slider Timer Banner-->
-				<!--<div class="tp-bannertimer"></div>-->
-				
 			</div>	
 		</div>
-
 	</section>	
 
 	<!-- *********************************	Bride & Groom Section **************************************** -->
-		<section id="couple">	
-		
+	<section id="couple">	
 		<div class="double-space"></div>	
 		<div class="centered-wrapper">
-			
 			<h1 class="section-title">The Bride & Groom</h1>
-			
 			<div class="space"></div>
-		
 			<div class="team">
 				<div class="percent-one-third box fadeInDown text-centered">
 					<div class="team-member">
@@ -191,12 +159,12 @@
 			<section class="centered-wrapper">
 				<div class="double-space"> </div>
 				<div id="getting-started" class="counter-number percent-one-whole center-text">
- 					<script type="text/javascript">
-					   $("#getting-started")
-					   .countdown("2016/06/11", function(event) {
-					   $(this).text(
-					   event.strftime('%D days | %H hours | %M minutes | %S seconds'));});
-					</script>
+ 				<!-- 	<script type="text/javascript">
+					//    $("#getting-started")
+					//    .countdown("2016/06/11", function(event) {
+					//    $(this).text(
+					//    event.strftime('%D days | %H hours | %M minutes | %S seconds'));});
+					// </script>-->
 				</div>
 				<div class="double-space"></div>
 			</section>	
@@ -662,6 +630,15 @@
 	<script type="text/javascript" src="js/jquery.nav.js"></script>
 	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
 
+	<!-- jQuery Scripts -->
+	<script type="text/javascript" src="js/modernizr.js"></script>		
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>	
+	<script type="text/javascript" src="js/jquery.parallax.js"></script>
+	<script type="text/javascript" src="js/countdown.js"></script>
+
+	<!-- Mapbox Scripts-->
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
+
 	<!-- MAP SCRIPT -->
 	<script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiZWFwIiwiYSI6IjZ5UG0yTFEifQ.1E1XmBHGouwyUQ4WexRI1A';
@@ -675,17 +652,11 @@ map.touchZoom.disable();
 // map.doubleClickZoom.disable();
 map.scrollWheelZoom.disable();
 
-// Disable tap handler, if present.
-// if (map.tap) map.tap.disable();
 
 L.mapbox.featureLayer({
-    // this feature is in the GeoJSON format: see geojson.org
-    // for the full specification
     type: 'Feature',
     geometry: {
         type: 'Point',
-        // coordinates here are in longitude, latitude order because
-        // x, y is the standard for GeoJSON and many formats
         coordinates: [
           -85.7564636,
           38.2484695 
@@ -694,16 +665,12 @@ L.mapbox.featureLayer({
     properties: {
         title: 'The Henry Clay',
         description: '604 S 3rd St',
-        // one can customize markers by adding simplestyle properties
-        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
         'marker-size': 'medium',
         'marker-color': '#F762AE',
         'marker-symbol': 'star'
     }
 }).addTo(map);
 </script>
-
-
 
 	<!-- ISOTOPE -->
 	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>	
