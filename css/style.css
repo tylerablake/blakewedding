@@ -1130,8 +1130,8 @@ blockquote {
 }
 
 ul#mainnav {
-	z-index:1001;
-	margin-right: -90px;
+	z-index:1001;	
+	margin-right: -30%;
 }
 
 ul#mainnav li a i {
@@ -1383,7 +1383,7 @@ h3.service {
 .team-avatar {
     height: 210px;
     max-width:100%;
-	display:inline-block;
+	display:block;
 }
 
 .team-text h3 {
@@ -1394,10 +1394,8 @@ h3.service {
 	text-transform:uppercase;
 	padding-top:18px;
 	margin-bottom:3px;
-	margin-right: -50px;
 	display: block;
 	position: relative;
-	width: 200px;
 }
 
 .team-text h3 span {
@@ -1442,80 +1440,6 @@ h3.service {
 	width:100%;
 	display:block;
 }
-
-.store-member {
-    position:relative;
-	margin-bottom:20px;
-	width: 300px;
-	margin-right: -100px;
-}
-
-.store-member a {
-	overflow: hidden;
-	display: block;
-	position: relative;
-}
-
-.store-avatar {
-    height: 210px;
-    max-width:100%;
-	display:inline-block;
-}
-
-.store-text h3 {
-	font-size: 14px;
-	font-weight: 800;
-	text-align:center;
-	clear:both;
-	text-transform:uppercase;
-	padding-top:18px;
-	margin-bottom:3px;
-	display: block;
-	position: relative;
-}
-
-.store-text h3 span {
-	padding-bottom: 5px;
-}
-
-.store-text h6 {
-	text-align:center;
-	font-size: 14px;
-	font-weight: 300;
-	padding-bottom: 5px;
-	margin-top: 10px;
-	color: #323232;
-	margin-bottom: 0px;
-}
-
-.store-text p {
-	padding: 0 10px;
-	text-align: center;
-	line-height: 22px;
-}	
-
-.store-social {
-	text-align:center;
-	overflow:hidden;
-	clear:both;
-    
-	font-size: 14px;
-}
-
-.store-social a {
-	padding: 9px;
-	display:inline-block;
-	color: #848484;
-}
-
-.store-text p {
-    margin-top:10px;
-}
-
-
-
-
-
 .skillbar {
 	position:relative;
 	display:block;
@@ -2627,7 +2551,7 @@ input:focus, textarea:focus {
 	clear:both;
 	margin:0 auto;
 	color: #868686;
-	padding: 50px 0;
+	padding: 5px 0;
 	position: relative;
 }
 

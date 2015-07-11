@@ -76,7 +76,6 @@ $(window).load(function() {
 
 	// Fixes some Waypoint issues
 	$('body').waypoint(function() {
-		console.log('ready to go');
 	}, 
 	{ 
 		triggerOnce: true
@@ -323,39 +322,39 @@ $(document).ready(function() {
 	
 	
 	// Header Effect on Scroll
-	$(window).scroll( function() {
-			var value = $(this).scrollTop();
-			if ( value > 120 )	{
-				$("#header").addClass("scrolled-header");
-				$("#header").css({"padding-top": "15px", "padding-bottom": "15px"});
-				$(".scrolled-header").css({"background":"rgba(255,255,255,0.95)", "box-shadow": "0px 0px 3px rgba(0, 0, 0, 0.3)"});
-				$(".no-rgba .scrolled-header").css({"background": "url(images/no-rgba-white.png) repeat scroll 0 0"});
-				$(".logo img").css({"height": "30px", "width": "auto"});
-				$(".scrolled-header #mainnav").css({"padding-top": "2px"});
-				$(".scrolled-header ul#mainnav li ul li a").css({'background': 'rgba(255,255,255,0.95)'});
-				$(".no-rgba .scrolled-header ul#mainnav li ul li a").css({"background": "url(images/no-rgba-white.png) repeat scroll 0 0"});
+	// $(window).scroll( function() {
+	// 		var value = $(this).scrollTop();
+	// 		if ( value > 120 )	{
+	// 			$("#header").addClass("scrolled-header");
+	// 			$("#header").css({"padding-top": "15px", "padding-bottom": "15px"});
+	// 			$(".scrolled-header").css({"background":"rgba(255,255,255,0.95)", "box-shadow": "0px 0px 3px rgba(0, 0, 0, 0.3)"});
+	// 			$(".no-rgba .scrolled-header").css({"background": "url(images/no-rgba-white.png) repeat scroll 0 0"});
+	// 			$(".logo img").css({"height": "30px", "width": "auto"});
+	// 			$(".scrolled-header #mainnav").css({"padding-top": "2px"});
+	// 			$(".scrolled-header ul#mainnav li ul li a").css({'background': 'rgba(255,255,255,0.95)'});
+	// 			$(".no-rgba .scrolled-header ul#mainnav li ul li a").css({"background": "url(images/no-rgba-white.png) repeat scroll 0 0"});
 				
-				$("#header.no-header").addClass("show");
+	// 			$("#header.no-header").addClass("show");
 				
-				$(".no-csstransforms .no-header").css({"display": "block"});
+	// 			$(".no-csstransforms .no-header").css({"display": "block"});
 			
-			}
-			else {
-				$("#header").removeClass("scrolled-header");
-				$("#header.transparent-header, #header.solid-header").css({"padding-top": "55px", "padding-bottom": "25px"});
-				$(".logo img").css({"height": "auto", "width": "auto"});
-				$("#header #mainnav").css({"padding-top": "10px"});
+	// 		}
+	// 		else {
+	// 			$("#header").removeClass("scrolled-header");
+	// 			$("#header.transparent-header, #header.solid-header").css({"padding-top": "15px", "padding-bottom": "15px"});
+	// 			$(".logo img").css({"height": "auto", "width": "auto"});
+	// 			$("#header #mainnav").css({"padding-top": "10px"});
 				
-				$(".transparent-header").css({"background":"rgba(255,255,255,0.75)", "box-shadow": "none"});
-				$(".no-rgba .transparent-header").css({"background":"url(images/no-rgba-white.png) repeat scroll 0 0"});
-				$(".solid-header").css({"background":"#fff", "box-shadow": "none"});
+	// 			$(".transparent-header").css({"background":"rgba(255,255,255,0.75)", "box-shadow": "none"});
+	// 			$(".no-rgba .transparent-header").css({"background":"url(images/no-rgba-white.png) repeat scroll 0 0"});
+	// 			$(".solid-header").css({"background":"#fff", "box-shadow": "none"});
 				
-				$("#header.no-header .logo img").css({"height": "30px", "width": "auto"});
-				$("#header.no-header").removeClass("show");
-				$(".no-csstransforms .no-header").css({"display": "none"});				
+	// 			$("#header.no-header .logo img").css({"height": "30px", "width": "auto"});
+	// 			$("#header.no-header").removeClass("show");
+	// 			$(".no-csstransforms .no-header").css({"display": "none"});				
 				
-			}
-	});	
+	// 		}
+	// });	
 	
 	// Animations on Scroll
 
