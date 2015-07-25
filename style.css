@@ -3404,8 +3404,8 @@ ul.customlist li i {
 	font-size: 200%;
 	font-weight: 100;
 	text-align: center;
-	font-family: 'ar_bonnieregular',"adobe-garamond-pro",sans-serif;
 }
+
 /*Media Queries*/
 @media (max-device-width: 1280px ) {
 	.team .team-text p {
@@ -3415,13 +3415,14 @@ ul.customlist li i {
 @media (max-device-width: 1024px ) {
 	#couple .team-text p {
 	}
-/*#couple .percent-one-third{
+
+#couple .percent-one-third{
 	margin-right: 80px;
 	margin-left: 60px;
-}*/
+}
 
 	#team .team .team-text p {
-		height: 95px;
+		height: 100px;
 	}
 	.nav-btn{
 		margin-top: -15px;
