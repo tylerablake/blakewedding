@@ -3409,13 +3409,11 @@ ul.customlist li i {
 /*Media Queries*/
 @media (max-device-width: 1280px ) {
 	.team .team-text p {
-		color: blue;
 		height: 65px;
 	}
 }
 @media (max-device-width: 1024px ) {
 	#couple .team-text p {
-		color: red;
 	}
 /*#couple .percent-one-third{
 	margin-right: 80px;
@@ -3423,7 +3421,6 @@ ul.customlist li i {
 }*/
 
 	#team .team .team-text p {
-		color: blue;
 		height: 95px;
 	}
 	.nav-btn{
