@@ -719,7 +719,13 @@ a:hover {
 }
 
 p {
-	margin-bottom:20px;
+	margin-bottom:0px;
+}
+
+.team-space{
+	height: 5px;
+    width: 100%;
+    clear: both;
 }
 
 .clear {
@@ -1382,7 +1388,7 @@ h3.service {
 
 .team-avatar {
     height: 210px;
-    max-width:100%;
+    width:100%;
 	display:inline-block;
 }
 
@@ -1456,7 +1462,7 @@ h3.service {
 
 .store-avatar {
     height: 210px;
-    max-width:100%;
+    width:100%;
 	display:inline-block;
 }
 
@@ -3403,49 +3409,3 @@ ul.customlist li i {
 	font-weight: 100;
 	text-align: center;
 }
-
-
-.team-text p h3 h5{
-	max-width: 100%;
-}
-/*Media Queries*/
-@media (max-device-width: 1280px ) {
-	.team .team-text p {
-		height: 80px;
-	}
-}
-@media (max-device-width: 1024px ) {
-	#couple .team-text p {
-		height: 95px;
-	}
-
-#couple .percent-one-third{
-	margin-right: 80px;
-	margin-left: 60px;
-}
-
-	#team .team .team-text p {
-		height: 100px;
-	}
-	#header  div  a{
-		margin-top: -15px;
-		color: green;
-	}
-
-	#header  div  a  i{
-		color: pink;
-	}
-	.store-avatar{
-		max-width: 230px;
-	}
-}
-@media (max-device-width: 768px ){
-	div.team   h3{
-	max-width: 100%;
-}
-}
-
-/*#couple div .centered-wrapper{
-	padding-left: 10px;
-	padding-right: 10px;
-}*/
