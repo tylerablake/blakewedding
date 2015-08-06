@@ -2675,6 +2675,8 @@ input:focus, textarea:focus {
 	float:left;
 	font-size: 14px;
 	margin-left: -10px;
+	color:black;
+	font-weight: bold;
 }
 
 
