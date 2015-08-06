@@ -169,12 +169,14 @@ html .tp-leftarrow.default {
 	background: url(images/slider-arrows.png) no-repeat 0 0;
 	width: 47px;
 	height: 47px;
+	top: 50%;
 }
 
 html .tp-rightarrow.default {
 	background: url(images/slider-arrows.png) no-repeat -47px 0;
 	width: 47px;
 	height: 47px;
+	top: 50%;
 }
 
 html .tp-bullets {
@@ -3408,4 +3410,9 @@ ul.customlist li i {
 	font-size: 200%;
 	font-weight: 100;
 	text-align: center;
+
+}
+#whenandwhere .section-tagline h2 b{
+	color: #c5b15a;
+	font-weight: 900;
 }
