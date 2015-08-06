@@ -2671,8 +2671,8 @@ input:focus, textarea:focus {
 
 #bottomfooter p {
 	float:left;
-	margin:0;
 	font-size: 14px;
+	margin-left: -10px;
 }
 
 
