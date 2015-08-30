@@ -392,7 +392,7 @@ $(document).ready(function() {
 	
 	
 	// Video in Posts		
-	$(".post-video").fitVids();		
+	// $(".post-video").fitVids();		
 	
 	
 	// Twitter Feed
@@ -413,17 +413,17 @@ $(document).ready(function() {
 
 	
 	// Flickr Widget
-	$('#flickr').jflickrfeed({
-		limit: 10,
-		qstrings: {
-			id: '58842866@N08',
-			tags: 'architecture'
-		},
-		itemTemplate: 
-		'<li>' +
-			'<a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a>' +
-		'</li>' 
-	});	
+	// $('#flickr').jflickrfeed({
+	// 	limit: 10,
+	// 	qstrings: {
+	// 		id: '58842866@N08',
+	// 		tags: 'architecture'
+	// 	},
+	// 	itemTemplate: 
+	// 	'<li>' +
+	// 		'<a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a>' +
+	// 	'</li>' 
+	// });	
 
 	
 	// PrettyPhoto
@@ -438,17 +438,17 @@ $(document).ready(function() {
 
 	
 	// Audio Player
-	$("#audio_jplayer").jPlayer({
-		ready: function (event) {
-			$(this).jPlayer("setMedia", {
-				mp3:"media/audio.mp3",
-				ogg:"media/audio.ogg"
-			});
-		},
-		swfPath: "/media",
-		supplied: "mp3, ogg",
-		wmode: "window"
-	});
+	// $("#audio_jplayer").jPlayer({
+	// 	ready: function (event) {
+	// 		$(this).jPlayer("setMedia", {
+	// 			mp3:"media/audio.mp3",
+	// 			ogg:"media/audio.ogg"
+	// 		});
+	// 	},
+	// 	swfPath: "/media",
+	// 	supplied: "mp3, ogg",
+	// 	wmode: "window"
+	// });
 
 });
 

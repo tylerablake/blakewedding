@@ -169,12 +169,14 @@ html .tp-leftarrow.default {
 	background: url(images/slider-arrows.png) no-repeat 0 0;
 	width: 47px;
 	height: 47px;
+	top: 50%;
 }
 
 html .tp-rightarrow.default {
 	background: url(images/slider-arrows.png) no-repeat -47px 0;
 	width: 47px;
 	height: 47px;
+	top: 50%;
 }
 
 html .tp-bullets {
@@ -719,7 +721,13 @@ a:hover {
 }
 
 p {
-	margin-bottom:20px;
+	margin-bottom:0px;
+}
+
+.team-space{
+	height: 5px;
+    width: 100%;
+    clear: both;
 }
 
 .clear {
@@ -1382,7 +1390,7 @@ h3.service {
 
 .team-avatar {
     height: 210px;
-    max-width:100%;
+    width:100%;
 	display:inline-block;
 }
 
@@ -1456,7 +1464,7 @@ h3.service {
 
 .store-avatar {
     height: 210px;
-    max-width:100%;
+    width:100%;
 	display:inline-block;
 }
 
@@ -2665,8 +2673,10 @@ input:focus, textarea:focus {
 
 #bottomfooter p {
 	float:left;
-	margin:0;
 	font-size: 14px;
+	margin-left: -10px;
+	color:black;
+	font-weight: bold;
 }
 
 
@@ -3402,50 +3412,9 @@ ul.customlist li i {
 	font-size: 200%;
 	font-weight: 100;
 	text-align: center;
-}
 
-
-.team-text p h3 h5{
-	max-width: 100%;
 }
-/*Media Queries*/
-@media (max-device-width: 1280px ) {
-	.team .team-text p {
-		height: 80px;
-	}
+#whenandwhere .section-tagline h2 b{
+	color: #c5b15a;
+	font-weight: 900;
 }
-@media (max-device-width: 1024px ) {
-	#couple .team-text p {
-		height: 95px;
-	}
-
-#couple .percent-one-third{
-	margin-right: 80px;
-	margin-left: 60px;
-}
-
-	#team .team .team-text p {
-		height: 100px;
-	}
-	#header  div  a{
-		margin-top: -15px;
-		color: green;
-	}
-
-	#header  div  a  i{
-		color: pink;
-	}
-	.store-avatar{
-		max-width: 230px;
-	}
-}
-@media (max-device-width: 768px ){
-	div.team   h3{
-	max-width: 100%;
-}
-}
-
-/*#couple div .centered-wrapper{
-	padding-left: 10px;
-	padding-right: 10px;
-}*/
