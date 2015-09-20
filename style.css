@@ -3418,3 +3418,9 @@ ul.customlist li i {
 	color: #c5b15a;
 	font-weight: 900;
 }
+
+.proposal-image{
+    height: 210px;
+    width:80%;
+	display:inline-block;
+}
