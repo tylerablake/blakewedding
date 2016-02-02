@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel='shortcut icon' href='img/wedding-couple.ico' type='image/x-icon'/ > 
+    <title>Emily & Tyler's Wedding Website</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+<script type="text/javascript">
+    // Wait for window load
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+</script>
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css" rel="stylesheet" type="text/css" >
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+
+    <!-- Mapbox CSS -->
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+</head>
+
+<body id="page-top" class="index">
+
+<!-- Spinner -->
+<div class="se-pre-con"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default center navbar-fixed-top">
+        <div class="container navbar-inner">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+           </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-center">
+                    <li class="page-scroll">
+                        <a href="#intro">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#brideAndGroom">Bride & Groom</a>
+                    </li>
+                   <li class="page-scroll">
+                        <a href="#proposal">Proposal</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#weddingParty">Wedding Party</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#whenAndWhere">When & Where</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#registries">Registries</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="intro"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="img/slider/sliderTest.jpg" class="col-md-12 img-responsive visible-desktop" alt="">
+                    <img src="img/slider/mobileSlider.jpg" class="col-md-12 img-responsive visible-phone" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>           
+
+
+    <!-- The Bride And Groom Grid Section -->
+    <section id="brideAndGroom"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="sectionTitle">The Bride & Groom</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <img id="brideAndGroomImage" src="img/weddingParty/brideAndGroom.jpg" class="col-md-12 img-responsive" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center">
+                    <h3><span>Emily &amp; Tyler</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Countdown Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <br>
+                <div id="countdown" class="text-center counter-number">
+                </div>
+                <div class="days-wrapper counter-number mobile-counter">
+                    <span class="days"></span><span>&nbsp;days</span>
+                </div>
+
+                <div class="hours-wrapper counter-number mobile-counter">
+                    <span class="hours"></span><span>&nbsp;hours</span>
+                </div>
+
+                <div class="minutes-wrapper counter-number mobile-counter">
+                    <span class="minutes"></span><span>&nbsp;minutes</span>
+                </div>
+
+                <div class="seconds-wrapper counter-number mobile-counter">
+                    <span class="seconds"></span><span>&nbsp;seconds</span>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- The Proposal Section -->
+    <section id="proposal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="sectionTitle">The Proposal</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                        <img src="img/proposal/proposal1.png" class="img-responsive proposalImage" alt="">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                        <img src="img/proposal/proposal2.png" class="img-responsive proposalImage" alt="">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                        <img src="img/proposal/proposal3.png" class="img-responsive proposalImage" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Wedding Party Section -->
+    <section id="weddingParty">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="sectionTitle">The Wedding Party</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 portfolio-item">
+                        <img src="img/weddingParty/clare.jpg" class="img-responsive weddingParty" alt="">
+                        <div class="text-center">
+                                <h3>Clare<br>
+                                    Field</h3>
+                                <h4>Maid Of Honor</h4>
+                           </div>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                        <img src="img/weddingParty/christa.png" class="img-responsive weddingParty" alt="">
+                        <div class="text-center">
+                                <h3>Christa<br>
+                                    Hile</h3>
+                                <h4>Bridesmaid</h4>
+                            </div>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                        <img src="img/weddingParty/leslie.jpg" class="img-responsive weddingParty" alt="">
+                        <div class="text-center">
+                                <h3>Leslie<br>
+                                    Blanchard</h3>
+                                <h4>Bridesmaid</h4>
+                           </div>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                        <img src="img/weddingParty/breanna.jpg" class="img-responsive weddingParty" alt="">
+                        <div class="text-center">
+                                <h3>Breanna<br>
+                                    Blake</h3>
+                                <h4>Bridesmaid</h4>
+                           </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-sm-3 portfolio-item">
+                        <img src="img/weddingParty/jeremiah.png" class="img-responsive weddingParty" alt="">
+                        <div class="text-center">
+                                <h3>Jeremiah<br>
+                                    Blake</h3>
+                                <h4>Best Man</h4>
+                            </div>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                        <img src="img/weddingParty/ryan.png" class="img-responsive weddingParty" alt="">
+                        <div class="text-center">
+                                <h3>Ryan<br>
+                                    Hoover</h3>
+                                <h4>Groomsman</h4>
+                            </div>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                        <img src="img/weddingParty/nick.png" class="img-responsive weddingParty" alt="">
+                        <div class="text-center">
+                                <h3>Nick<br>
+                                    Byrd</h3>
+                                <h4>Groomsman</h4>
+                            </div>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                        <img src="img/weddingParty/colin.png" class="img-responsive weddingParty" alt="">
+                        <div class="text-center">
+                                <h3>Colin<br>
+                                    Portman</h3>
+                                <h4>Groomsman</h4>
+                            </div>
+                </div>
+            </div>
+            <div class="space"></div>
+        </div>
+    </section>
+
+    <!-- The Quote Section -->
+    <section id="quote" class="success">
+        <div class="container">
+            <div class="row">
+                <br>
+                <h3 class="bombshellText">"The best thing to hold onto in life is each other."</h3>
+                    <br>
+                <div class="text-right">-Audrey Hepburn</div>
+                </div>
+        </div>
+    </section>
+
+    <!-- The Images Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="img/emilyAndTylerComputer.jpg" class="col-md-12 img-responsive visible-desktop" alt="">
+                    <img src="img/emilyAndTylerMobile.jpg" class="col-md-12 img-responsive visible-phone" alt="">
+                </div>
+            </div>
+        </div>
+   </section>
+
+
+    <!-- The When and Where Section -->
+    <section id="whenAndWhere">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="sectionTitle">When & Where</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                <h2>Saturday, June 11, 2016<br>
+                6:00 PM<br></h2>
+                    <div id="venueTitle">
+                        <h2><b>The Henry Clay</b><br>
+                    </div>
+                <p class="streetAddress">604 South Third Street<br></p>
+                <p class="streetAddress">Louisville, Kentucky 40202</p>
+                <div>
+                    <br>
+                </div>
+
+                <p>The wedding ceremony will be held on the fourth floor, with cocktails, dinner and dancing to follow. <br>
+                    The location is marked with a pin on the map below. <br><br>
+                    A public parking garage is located directly behind The Henry Clay with access from Chestnut Street. <br>
+                    There are also surface parking lots located directly across from The Henry Clay on Third and Chestnut Streets. </p>
+                </div>
+            </div>
+        </div>
+            <div class="doubleSpace"></div>
+
+    <!-- The Mapbox Section -->
+        <div>
+            <div class="col-md-10 col-md-offset-1" id="map" style="position:relative; top:0; bottom:0; max-width:100%; max-height:500px; min-height: 200px;"></div>
+
+        </div>
+            <div class="doubleSpace"></div>
+            <div class="doubleSpace"></div>
+    </section>
+
+    <!-- The Registry Section -->
+    <section id="registries">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="sectionTitle">Registries</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 portfolio-item">
+                    <div class="col-sm-5 col-sm-offset-4">
+                        <a href="http://www-secure.target.com/gift-registry/giftgiver?registryId=0sri-cqzT9atxi3OzXhn8Q&registryType=WEDDING" target="_blank">
+                            <img src="img/targetLogo.png" class="img-responsive registry" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="registry-space"></div>
+                <div class="col-sm-6 portfolio-item">
+                    <div class="col-sm-5 col-sm-offset-3">
+                        <a href="http://www1.macys.com/registry/wedding/guest/?registryId=6450586" target="_blank">                       
+                            <img src="img/macysLogo2.png" class="img-responsive center-block registry" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        &copy;2015 Website designed and built by the Bride and <a href="http://tylerablake.com" style="color: #bc995d;" target="_blank">Groom</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+    <!-- Countdown JavaScript -->
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/countdown.js"></script>
+
+    <!-- MapBox JavaScipt -->
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+</body>
+</html>
